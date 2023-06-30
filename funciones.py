@@ -1,8 +1,3 @@
-#{===================================COLORES======================================================}
-class bcolor:
-    G = '\033[92m'
-    R = '\033[91m'
-    reset = '\033[0m'
 #{====================================RUTS========================================================}
 def vali_ruts():
     while True:
@@ -35,7 +30,7 @@ def vali_opcion():
     while True:
         try:
             opci = int(input("Ingrese una opción: "))
-            if opci in (1,2,3,4,5,6):
+            if opci in (1,2,3):
                 return opci
             else:
                 print(bcolor.R+ "Opcion no valida, reintente" +bcolor.reset)
